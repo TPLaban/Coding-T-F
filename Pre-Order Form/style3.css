@@ -1,0 +1,145 @@
+.pre-order-form {
+    background-color: rgb(176, 200, 221);
+     padding: 15% 15% 15% 15%;
+    border-radius: 15px;
+}
+.form {
+    background-color: white;
+    padding: 2% 0% 4% 0%;
+    border-radius: 15px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.input {
+    height: 30px;
+    border-radius: 8px;
+   
+}
+.input:hover{
+    border-color: blue;
+    background-color: rgb(216, 189, 241) ;
+    color: white;
+}
+.bg1{
+    padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bg2{
+    padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bg3{
+    padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bg4{
+    padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bg5{
+    padding: 0% 2% 0% 2%;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-right: 45px;
+}
+.product1 {
+    padding: 2% 2% 3% 2%;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-color: rgb(235, 242, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ibgp1 {
+    background-color: rgb(178, 201, 244);
+    border-radius: 10px;
+    width: 100px;
+}
+.product2 {
+    padding: 2% 2% 3% 2%;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+     background-color: rgb(235, 242, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ibgp2 {
+    background-color: rgb(178, 201, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+}
+.product3 {
+    padding: 2% 2% 3% 2%;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-color: rgb(235, 242, 243);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.ibgp3 {
+    background-color: rgb(178, 201, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+}
+.bg6 {
+        padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.bg7 {
+    padding: 2% 2% 3% 2%;
+    background-color: rgb(240, 239, 239);
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-right: 45px;
+    
+}
+.textarea {
+    width: 936px; 
+    border-radius: 10px; 
+    height: 200px;
+}
+.textarea:hover{
+    border-color: blue;
+    background-color: rgb(216, 189, 241) ;
+    color: white;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background:linear-gradient(to right, blue, green);
+    border-radius: 10px;
+    margin-left: 450px;
+    font-size: 20px;
+}

@@ -21,8 +21,7 @@ footer {
 }
 .mgp {font-size: 60px; text-align: center; color: rgb(56, 13, 250);
 
-}
-.bgi { background-image: url(./assets/freeimage.jpeg), no re-peat, cover; 
+}bgi { background-image: url(./assets/freeimage.jpeg);
     background-repeat: no repeat;
     background-size: cover;
 }
@@ -30,14 +29,12 @@ footer {
     text-align: center; color: coral;}
 .para1 {font-family: "Playwrite IN Guides", cursive}
 .button {
-    background-color: red; 
-    color: aliceblue; 
-    border-color: red; 
-    border-radius: 10px; 
-    width: 3cm;
-    height: 1cm; 
-    text-align: center;
-        }
+    color: white;
+    background:linear-gradient(to right, blue, green);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin-left: 350px;}   
 
 .lvl {alignment-baseline: baseline;}
 .ifh2 { text-align: center;}
@@ -85,18 +82,31 @@ a:visited {
    top: 0;
    right: 0;
 
+
    
 }
-
-.sticky {
-    position: sticky;
+.navbar {
+     width: 100%;
+    height: 50%px;
+    background-color: #f49005;   
+    z-index: 5;
+    display: flex;
+    align-items: center;
+        position: sticky;
     top: 0;
     right: 0;
     left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top left, rgb(82, 3, 239),rgb(255, 234, 0),rgb(240, 4, 4));
-    z-index: 5;
+}
+.logo {
+width: 20%;
+   
+    }
+    .navlinkss {
+        color: black;
+        height: 20px;
+        width: 80%;
+        align-items: center;
+        justify-content: space-evenly
     }
 /* home */
 .home {
@@ -146,13 +156,7 @@ Position: absolute;
 top:300px;
 left: 20px;
 }
-.right-home {
-    width: 700px;
-    height: 300px;
-    position: relative;
-    left: 800px;
-    bottom: 400px;
-}
+
 /* herosession */
 /* .Relativeposition {
     position: relative;
@@ -176,7 +180,7 @@ left: 20px;
     background-color: #f49005;
     border-radius: 20px;
     bottom: 400px;
-    padding: 5%; 5%; 5%; 5%;
+    padding: 5% 5%; 5% 5%;
     
 }
 .heronotes {width: 750px;
@@ -195,80 +199,309 @@ left: 20px;
     
 }
 
-/* Phone design */
-.phone{
-    width: 350px;
-    height: 600px;
-    background: linear-gradient(to top right,rgb(36, 36, 19),#a8a8e7);
-    border-radius: 30px;
-    padding: 2% 2% 2% 2%;
+.bbb {
+    width: 600px;
+    height: 400px;
+    background-color: #f49005;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.bbb1 {
+    width: 150px;
+    height: 100px;
+    background-color: blue;
+}
+
+/* Z-index wit Absolute and relative position */
+
+.containerA {
+    background-color: rgb(203, 166, 237);
+}
+.box1 {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+}
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    z-index: 2;
+
+}
+.box3 {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    z-index: 3;
+
+}
+/* z-index continue */
+.containerB {
+    background-color: rgb(203, 166, 237);
+}
+.box4 {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 2;
+}
+
+.box5 {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+    z-index: 3;
+
+}
+.box6 {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    position: absolute;
+    left: 65%;
+    top: 90%;
+    z-index: 3;
+
+}
+.text-position {
+    position: sticky;
+    bottom: 10%;
+     left: 5%;
+    background-color: blueviolet;
+    font-size: 20px;
+
+}
+.textposition1 {
+position: sticky;
+bottom: 10%;
+left: 2%;
+} 
+.flagstar {
+    position: fixed;
+    top: 10%;
+    right: 2%;
+}
+
+
+
+/* gride */
+
+
+.firstgrid {
+    grid-area: firstgrid;
+    }
+
+.secondgrid {
+        grid-area: secondgrid;
+    }
+
+.thirdgrid {
+     grid-area: thirdgrid;
+    }
+
+.forthgrid {
+        grid-area: forthgrid;
+    }
+
+.fifthgrid {
+        grid-area: fifthgrid;
+    }
+
+.sixthgrid {
+    grid-area: sixthgrid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat( 4, 1fr); */
+    /* grid-template-rows: repeat(3, 2fr); */
+    grid-template-areas: 
+    "firstgrid secondgrid secondgrid"
+    "firstgrid thirdgrid fifthgrid"
+    "firstgrid forthgrid fifthgrid"
+    "sixthgrid sixthgrid sixthgrid"
+    ;
+    gap: 10px;
+
+}
+.container > div {
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 20px;
+    font-size: 30px;
+
+}
+/* glo home work */
+.glo {
+    width: 100%;
+    /* height: 400px; */
+  
+
+}
+.nav1 {
+    width: 100%;
+    height: 75px;
+    background-color: rgb(3, 227, 175);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.nav1div1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    padding-left: 4%;
+    
+}
+.nav1div2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    
+}
+.new {
+
+    background-color: white;
+}
+.nav1div3 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: green;
+    height: 75px;
+    align-items: center;
+    
+}
+.nav2 {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+.glologo {
+    padding-left: 3%;
+    width: 20%;
+}
+.nav2links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.glohero {
+    height: 200px;
+    background-color: blueviolet;
+}
+
+/* grid work hero */
+.grid1 {
+    grid-area: buydata;
+}
+
+.grid2 {
+    grid-area: tariff;
+}
+.grid3 {
+    grid-area: borrow;
+}
+
+.grid4 {
+    grid-area: share;
+}
+
+.grid5 {
+    grid-area: globusiness;
+}
+.grid6 {
+    grid-area: gift;
+}
+.grid7 {
+    grid-area: entertainment;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "buydata tariff borrow"
+    "share share globusiness"
+    "gift entertainment globusiness"
+    ;
+    gap: 1%;
+
+}
+.container > div {
+    background-color: white
+}
+.img:hover {
+
+}
+.img {
+    filter: brightness(45%);
+    width: 100%;
+    border-radius: 10px;
+}
+.gloarrow {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    align-items: center;
+}
+.borrow-data {
+    color: white;
+    position: relative;
+    bottom: 50%;
+   
+} 
+.glo-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.ps-dropdown:hover {
+    color: rgb(243, 9, 9);
+}
+.ps-dropdown {
     position: relative;
 }
+.ps-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    background-color: rgb(201, 187, 169);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.ps-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.ps-dropdown-content a:hover {
+  background-color: #f1f1f1;}
 
-.calender {
-    position: absolute;
-    top:  50px;
-    left: 300px;
-}
-
-.chrome {
-    position: absolute;
-    bottom:  50px;
-  left: 40px;
-}
-.contact {
-    position: absolute;
-    bottom:50px;
-    left: 150px;
-}
-.phonecall{
-    position: absolute;
-    bottom: 50px;
-    left: 250px;
-}
-.messenger {
-    position: absolute;
-    bottom: 50px;
-    left: 350px;
-}
-.whatsapp {
-    position: absolute;
-    top: 100px;
-    left: 350px;
-}
-.playstore {
-    position: absolute;
-    bottom: 250px;
-    left: 350px;
-}
-
-.location {
-    position: absolute;
-    bottom: 250px;
-    left: 250px;
-}
-.calender {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-}
-.skype {
-    position: absolute;
-    top: 100px;
-    left: 250px;
-}
-.camera{
-    position: absolute;
-    top: 350px;
-    left: 50px;
-}
-.facebook {
-    position: absolute;
-    top: 100px;
-    left: 150px;
-}
-.calculator {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-}

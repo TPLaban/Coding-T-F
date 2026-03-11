@@ -1,0 +1,57 @@
+.cssurvey {
+    background-color: rgb(188, 225, 232);
+    border-radius: 10px;
+    padding: 15% 15% 15% 15%;
+}
+.tablebg {
+    background-color: white;
+    border-radius: 10Px;
+    padding: 10% 10% 10% 10%;
+}
+.rowbg {
+    background-color: rgb(223, 235, 238);
+}
+.columbg {
+    background-color: rgb(223, 235, 238);
+}
+.radio {
+align-items: center;
+text-align: center;
+}
+.radiosize
+{width: 20px; height: 20px;}
+
+.textarea:hover {
+    border-color: solid 1px red;
+    background-color: rgb(96, 133, 197);
+    color: white;
+}
+.textarea {
+    width: 900px; height: 130px; border-radius: 10px;
+}
+.selectbg {
+    background-color: rgb(221, 221, 221);
+    width: 875px;
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.select {
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    align-items: center;
+    text-align: center;
+    
+}
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:green;
+    color: white;
+    font-size: 18px;
+    border-color: green;
+ 
+}

@@ -1,0 +1,366 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image:url(./assets/bg1.jpeg);
+    z-index: 2;
+}
+ul li {
+    list-style-type: none;
+
+}
+.logo {
+    width: 20%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(220, 239, 220);
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+li {
+    
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 20px;
+    color: black;
+    
+}
+ul {
+    display: flex;
+    gap: 7.5rem;
+    padding-right: 100px;
+}
+a {
+   text-decoration: none;
+   font-size: 20px;
+
+}
+.container {
+    justify-content: center;
+    width: 40%;
+
+}
+.dropdown{
+    display: block;
+    /* position: flex; */
+    /* background-color: rgb(241, 127, 13); */
+    width: 210px;
+
+}
+.content { display: none;
+/* background-color: rgba(205, 144, 13, 0.676); */
+text-align: center;
+position: absolute;
+width: 45px;
+box-shadow: 3px 3px 5px rgb(222, 4, 4);
+}
+.dropdown:hover .content {
+    /* background-color: rgb(224, 221, 221); */
+    /* color: rgb(8, 236, 34); */
+    
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown .content:hover {
+    color: rgb(16, 219, 53);
+    background-color: rgb(126, 7, 210);
+}
+
+
+.gospelmusic {
+padding-top: 100px;
+justify-content: center;
+align-items: center;
+display: flex;
+gap: 10%;
+z-index: 1;
+
+
+}
+
+  
+.osinachi {
+    background-color: rgb(128, 134, 206);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px red;
+    z-index: 1;
+}
+.osinachi:hover {
+    transform: scale(110%);
+}
+
+.img-osinachi {
+    width: 55%;
+}
+
+.chioma {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+}
+.chioma:hover {
+    transform: scale(110%);
+}
+.img-chioma {
+    width: 50%;
+}
+
+.timgodfrey {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 140, 0);
+}
+.timgodfrey:hover {
+    transform: scale(110%);
+}
+.img-tim {
+    width: 50%;
+}
+
+.onyeka {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 140, 0);
+}
+.onyeka:hover {
+    transform: scale(110%);
+}
+.img-onyeka {
+    width: 70%;
+}
+
+.tomifavor {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 140, 0);
+}
+.tomifavor:hover {
+    transform: scale(110%);
+}
+.img-tomifavor {
+    width: 50%;
+}
+
+.sola {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 140, 0);
+}
+.sola:hover {
+    transform: scale(110%);
+}
+.img-sola {
+    width: 55%;
+}
+/* grid arrangement  */
+.osinachi {
+    grid-area: osinachi;
+}
+.chioma {
+    grid-area: chioma;
+}
+.timgodfrey {
+    grid-area: timgodfrey;
+}
+.onyeka {
+    grid-area: onyeka;
+}
+.tomifavor {
+    grid-area: tomifavor;
+}
+.sola {
+    grid-area: sola;
+}
+.gospelmusic {
+    display: grid;
+    grid-template-areas: 
+    "osinachi chioma timgodfrey"
+    "onyeka tomifavor sola"
+    ;
+    gap: 5%;
+}
+
+footer {
+    background-color: rgb(118, 101, 134);
+    height: 50px;
+   text-align: center;
+    margin-top: 150%;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* Media querry */
+
+@media screen and (max-width: 600px) {
+  nav {
+    background-color: rgb(230, 219, 200); 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3%;
+    position: fixed;
+    z-index: 10000;
+  }
+  .logo {
+    width: 100px;
+  }
+  a {
+    font-size: .8rem;
+  }
+   .container {display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* background-color: rgb(14, 231, 39); */
+    gap: 2%;
+    /* height: 45px; */
+
+}
+.content {display: none;
+/* background-color: rgba(202, 155, 84, 0.676); */
+text-align: center;
+position: absolute;
+width: 60px;
+padding-right: 60px;
+box-shadow: 3px 3px 5px rgba(227, 97, 10, 0.995);
+
+}
+
+.gospelmusic {
+    display: grid;
+    grid-template-areas: 
+    "osinachi" 
+    "chioma" 
+    "timgodfrey"
+    "onyeka" 
+    "tomifavor" 
+    "sola"
+    ;
+    padding-left: 5%;
+  
+
+}
+h2 {
+    font-size: large;
+}
+.osinachi {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+}
+.chioma {
+    background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+}
+.img-chioma {
+    width: 20%;
+}
+.audio {
+    width: 100%;
+}
+.timgodfrey { background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+
+}
+.onyeka {
+     background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+}
+
+.tomifavor {
+     background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+    }
+    .sola {
+         background-color: rgb(149, 175, 214);
+    padding: 20px 40px;
+    color: rgb(250, 250, 250);
+    border-radius: 1000px;
+    height: 250px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(241, 249, 4);
+    }
+}
+  
