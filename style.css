@@ -474,6 +474,7 @@ left: 2%;
 }
 .borrow-data {
     color: white;
+<<<<<<< HEAD
     position: relative;
     bottom: 50%;
    
@@ -505,3 +506,9 @@ left: 2%;
 .ps-dropdown-content a:hover {
   background-color: #f1f1f1;}
 
+=======
+    position: relative;
+    bottom: 50%;
+   
+}
+>>>>>>> cf434409e9981caae65c77101fd8a20bf0c2df82

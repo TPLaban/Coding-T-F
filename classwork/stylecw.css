@@ -28,12 +28,18 @@
     
 }
 .new {
+<<<<<<< HEAD
     background-color:white;
     border-radius: 10px;
     align-items: center;
     color: green
     
     }
+=======
+
+    background-color: white;
+}
+>>>>>>> cf434409e9981caae65c77101fd8a20bf0c2df82
 .nav1div3 {
     display: flex;
     justify-content: space-evenly;
@@ -60,7 +66,11 @@
 .nav2link:hover {
     color: green;
 }
+<<<<<<< HEAD
 a:link {
+=======
+a:link{
+>>>>>>> cf434409e9981caae65c77101fd8a20bf0c2df82
     color: black;
 }
 a.visited {
@@ -141,11 +151,16 @@ a:hover {
 .gloimg {
     width: 100%;
     filter: brightness(45%);
+<<<<<<< HEAD
 }
 
 
 /* animation */
 
+=======
+
+}
+>>>>>>> cf434409e9981caae65c77101fd8a20bf0c2df82
 .gloimg:hover {
      scale: 105%;
     transition-duration: 5ms;
@@ -227,8 +242,12 @@ a:hover {
     margin-left: 9.5%;
     padding-top: 2%;
     position: absolute;
+<<<<<<< HEAD
     top: 292%;
     z-index: 1;
+=======
+    top: 291%;
+>>>>>>> cf434409e9981caae65c77101fd8a20bf0c2df82
    
     }
     .alabotton {
